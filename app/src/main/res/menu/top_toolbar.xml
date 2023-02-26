@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/ScreenSaver"
+        android:title="@string/screensaver" />
+
+    <item
+        android:id="@+id/Settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/privacy"
+
+        android:title="@string/privacy_policy" />
+
+    <item
+        android:id="@+id/sendFeedback"
+
+        android:title="@string/send_feedback" />
+
+    <item
+        android:id="@+id/help"
+
+        android:title="@string/help" />
+
+</menu>
