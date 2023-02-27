@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="@string/alarm" />
+    <item
+        android:id="@+id/alarmFragment"
+        android:icon="@drawable/ic_baseline_alarm_24"
+        android:title="@string/alarm" />
 
-    <item android:title="@string/clock" />
+    <item
+        android:id="@+id/clockFragment"
+        android:icon="@drawable/clock"
+        android:title="@string/clock"
 
-    <item android:title="@string/timer" />
+        />
 
-    <item android:title="@string/stopwatch" />
+    <item
+        android:id="@+id/timerFragment"
+        android:title="@string/timer"
+        android:icon="@drawable/timer"
 
-    <item android:title="@string/bedtime" />
+        />
+
+    <item
+        android:id="@+id/stopwatchFragment"
+        android:icon="@drawable/stopwatch"
+        android:title="@string/stopwatch" />
+
+    <item
+        android:id="@+id/bedTimeFragment"
+        android:icon="@drawable/sleep"
+        android:title="@string/bedtime" />
 
 </menu>
