@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                 2 -> i = 2
                 3 -> i = 3
                 4 -> i = 4
+
             }
         }
 
@@ -51,12 +52,12 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
 
             title = when (destination.id) {
-                R.id.alarmFragment -> "MyAlarm"
-                R.id.clockFragment -> "clockFragment"
+                R.id.alarmFragment -> "Alarm"
+                R.id.clockFragment -> "Clock"
                 R.id.timerFragment -> "Timer"
-                R.id.stopwatchFragment -> "stopwatchFragment"
-                R.id.bedtimeFragment -> "bedtimeFragment"
-                else -> " p-Kart"
+                R.id.stopwatchFragment -> "Stopwatch"
+                R.id.bedtimeFragment -> "Bedtime"
+                else -> " MyAlarm"
             }
             Log.d("destinATION","$controller")
 

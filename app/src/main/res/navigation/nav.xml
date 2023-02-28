@@ -11,6 +11,9 @@
         android:label="fragment_alarm"
         tools:layout="@layout/fragment_alarm" >
 
+        <action
+            android:id="@+id/action_alarmFragment_to_clockFragment"
+            app:destination="@id/clockFragment" />
     </fragment>
     <fragment
         android:id="@+id/clockFragment"

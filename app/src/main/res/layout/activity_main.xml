@@ -9,31 +9,35 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:navGraph ="@navigation/nav"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/nav" />
 
 
     <me.ibrahimsn.lib.SmoothBottomBar
+        android:layoutDirection="inherit"
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         app:iconMargin="8dp"
-        app:iconSize="15sp"
-        app:indicatorRadius="15dp"
-        app:menu="@menu/bottom_toolbar"
+        app:iconSize="20sp"
+        app:itemPadding="5dp"
+        app:indicatorRadius="25sp"
+        app:backgroundColor="@color/primaryColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fragmentContainer"
-        app:textSize="20sp" />
+        app:menu="@menu/bottom_toolbar"
+        app:textSize="15sp"
+
+        />
 
 
 
