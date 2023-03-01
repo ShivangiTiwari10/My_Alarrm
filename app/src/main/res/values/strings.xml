@@ -19,4 +19,6 @@
     <string name="vibrate">Vibrate</string>
     <string name="google_assistant">Google Assistant</string>
     <string name="delete">Delete</string>
+    <string name="_4_35_am">4:35 am</string>
+    <string name="not_sheduled">not Sheduled</string>
 </resources>
