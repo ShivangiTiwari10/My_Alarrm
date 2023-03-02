@@ -1,5 +1,6 @@
 package com.example.myalarrm
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import android.view.MenuItem
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.example.myalarrm.activity.TimePickerActivity
 import com.example.myalarrm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.fragmentContainer.setOnClickListener {
+            val intent = Intent(this,TimePickerActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainer)
