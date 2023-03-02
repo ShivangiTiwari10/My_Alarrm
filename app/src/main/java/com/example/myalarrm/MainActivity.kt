@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
 
             title = when (destination.id) {
-                R.id.alarmFragment -> "Alarm"
                 R.id.clockFragment -> "Clock"
                 R.id.timerFragment -> "Timer"
                 R.id.stopwatchFragment -> "Stopwatch"

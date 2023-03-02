@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.myalarrm.adapter.SetAlarmAdapter
 import com.example.myalarrm.databinding.FragmentAlarmBinding
 import com.example.myalarrm.model.SetAlarmModel
@@ -25,10 +26,14 @@ class AlarmFragment : Fragment() {
 
         list = ArrayList()
         getItem()
+
+        binding.floatingButton.setOnClickListener {
+            Toast.makeText(requireContext(),"clicked floatingButton",Toast.LENGTH_SHORT).show()
+        }
         return binding.root
     }
 
-    private fun getItem(){
+    private fun getItem() {
         binding.recyclerView.adapter = SetAlarmAdapter(list, requireContext())
 
     }
