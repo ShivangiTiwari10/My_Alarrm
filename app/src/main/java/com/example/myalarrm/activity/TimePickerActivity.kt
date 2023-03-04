@@ -2,11 +2,17 @@ package com.example.myalarrm.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myalarrm.R
+import com.example.myalarrm.databinding.ActivityTimePickerBinding
 
 class TimePickerActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityTimePickerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_time_picker)
+
+        binding = ActivityTimePickerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
+
+
 }
