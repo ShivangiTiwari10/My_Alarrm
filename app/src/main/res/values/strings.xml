@@ -21,4 +21,15 @@
     <string name="delete">Delete</string>
     <string name="_4_35_am">4:35 am</string>
     <string name="not_sheduled">not Sheduled</string>
+    <string name="schedule_alarm">Schedule Alarm</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="alarm_title">Alarm Title</string>
+    <string name="recurring_alarm">Recurring Alarm</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
 </resources>
